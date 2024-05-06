@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product</title>
+</head>
+<body>
+<h1>Товары</h1>
+<div class="wrapper-box">
+<div class="product">
+<div class="top-info">
+<div class="sale">-19%</div>
+<div class="img1" src="./ico-favorite.svg" alt=""></div>
+<img class="img2" src="./product-1.png" alt="">
+<div class="top">TOP</div>
+</div>
+<div class="bottom-info">
+<div class="column-1">
+<div class="name_product"><b>101 красная роза</b></div>
+<div class="column-2">
+<div class="first-price"><s>2800 грн</s></div>
+<div class="price"> <b>2280 грн</b></div>
+</div>
+</div>
+<div class="button">Заказать</div>
+<div class="link">Быстрый заказ</div>
+</div>
+</div>
+
+<style>
+.top-info{
+	background:#f5f4f5;
+	position: relative;
+}
+h1{
+	text-align: center;
+}
+.wrapper-box{
+	display: flex;
+}
+
+.button{
+	background: #956d84;
+	color: white;
+	width: 340px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #956d84;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 20px;
+	margin: 5px;
+	transition: all 1s;
+}
+
+.button:hover{
+	box-shadow: inset 1px 1px 5px 0.5px;
+background: #4db632;
+
+}
+
+.sale{
+	height: 50px;
+    width: 50px;
+		color: #956d84;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 36px;
+    border: 2px dashed #d11ea4;
+		margin: 5px;
+		margin-left: 20px;
+		position: absolute;
+		animation: sales linear 10s infinite;
+}
+
+@keyframes sales {
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(360deg)};
+}
+
+.product{
+	border: 2px solid #cfa3bc;
+	display: table;
+	position: relative;
+	margin: 10px;
+	transition: all 1s;
+	}
+
+	.product:first-child{
+		border-color: #4db632;
+	}
+	.product:last-child{
+		border-color: #2d64ca;
+	}
+	.product:nth-child(3){
+	border-color:#b32af3
+	}
+.product:hover{  
+	box-shadow: 1px 1px 5px 2px;
+	transform: scale(1.1);
+}
+
+	.img2{
+		width: 300px;
+		display: table;
+		padding: 25px;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.img1{
+		width: 33px;
+		height: 30px;
+		background:url(./ico-favorite.svg);
+		position: absolute;
+		top: 20px;
+		right: 10px;
+	}
+
+	.img1:hover{
+		background:url(./ico-favorite-hover.svg)
+	}
+
+
+
+	.link{
+		display: table;
+		color: #a566a2;
+		text-decoration: underline;
+		margin: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.link:hover{
+		text-decoration: none;
+	}
+
+	.top{
+		height: 50px;
+    width: 50px;
+		color: #ad849b;
+		background: #e4cde4;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 36px;
+    border: 2px  #e4d4e3;
+		margin: 5px;
+		position: absolute;
+		bottom: 0;
+		
+	}
+	.column-1{
+		display: flex;
+		align-items: center;
+		width: 93%;
+		justify-content: space-between;
+		padding: 3%;
+	}
+	.price{
+	color: #956d84;	
+	}
+	.first-price{
+		color: rgb(170, 166, 170);
+	}
+</style>
+
+	<div class="product">
+	<div class="top-info">
+	<div class="sale">-19%</div>
+	<div class="img1" src="./ico-favorite.svg" alt=""></div>
+	<img class="img2" src="./product-2.png" alt="">
+	<div class="top">TOP</div>
+	</div>
+	<div class="bottom-info">
+	<div class="column-1">
+	<div class="name_product"><b>101 красная роза</b></div>
+	<div class="column-2">
+	<div class="first-price"><s>2800 грн</s></div>
+	<div class="price"> <b>2280 грн</b></div>
+	</div>
+	</div>
+	<div class="button">Заказать</div>
+	<div class="link">Быстрый заказ</div>
+	</div>
+	</div>
+
+
+
+		<div class="product">
+		<div class="top-info">
+		<div class="sale">-19%</div>
+		<div class="img1" src="./ico-favorite.svg" alt=""></div>
+		<img class="img2" src="./product-3.png" alt="">
+		<div class="top">TOP</div>
+		</div>
+		<div class="bottom-info">
+		<div class="column-1">
+		<div class="name_product"><b>101 красная роза</b></div>
+		<div class="column-2">
+		<div class="first-price"><s>2800 грн</s></div>
+		<div class="price"> <b>2280 грн</b></div>
+		</div>
+		</div>
+		<div class="button">Заказать</div>
+		<div class="link">Быстрый заказ</div>
+		</div>
+		</div>
+</div>
+</body>
+</html>
